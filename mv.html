@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .box {
+            width: 100%;
+            height: 65px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 65px;
+            height: 65px;
+        }
+
+
+
+        .box1 {
+            width: 100%;
+            height: 2000px;
+            background-image: linear-gradient(rgb(18, 2, 87), rgb(159, 131, 228));
+        }
+
+        .text00 {
+            position: absolute;
+            top: 5%;
+            left: 7%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+
+        }
+
+        .text0 {
+            position: absolute;
+            top: 65%;
+            left: 25%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container1 {
+            position: absolute;
+            top: 20%;
+            right: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+        }
+
+        .text1 {
+            position: absolute;
+            top: 65%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container2 {
+            position: absolute;
+            top: 100%;
+            left: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+
+        }
+
+        .text2 {
+            position: absolute;
+            top: 145%;
+            left: 25%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container3 {
+            position: absolute;
+            top: 100%;
+            right: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+
+        }
+
+        .text3 {
+            position: absolute;
+            top: 145%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text4 {
+            white-space: pre-wrap;
+            position: absolute;
+            top: 75%;
+            left: 26%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text5 {
+            white-space: pre-wrap;
+            position: absolute;
+            top: 75%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text6 {
+            white-space: pre-wrap;
+            position: absolute;
+            top: 155%;
+            left: 26%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text7 {
+            white-space: pre-wrap;
+            position: absolute;
+            top: 155%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container4 {
+            position: absolute;
+            top: 180%;
+            left: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+
+        }
+
+        .text8 {
+            position: absolute;
+            top: 225%;
+            left: 25%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text9 {
+            white-space: pre-wrap;
+            position: absolute;
+            top: 235%;
+            left: 26%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .video-container5 {
+            position: absolute;
+            top: 180%;
+            right: 10%;
+            box-shadow: 0 0 20px rgb(255, 255, 255);
+
+        }
+
+        .text10 {
+            position: absolute;
+            top: 225%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text11 {
+            position: absolute;
+            top: 235%;
+            left: 75%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .text12 {
+            position: absolute;
+            top: 5%;
+            left: 45%;
+            transform: translate(-50%, -40%);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-family: Verdana, sans-serif;
+        }
+
+        .mv-image {
+            position: absolute;
+            top: 4.5%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 25px;
+            height: 25px;
+        }
+
+        .album-image {
+            position: absolute;
+            top: 4.5%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            width: 35px;
+            height: 25px;
+        }
+
+        .home-image {
+            position: absolute;
+            top: 4.5%;
+            right:0;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+        }
+
+        .home-image:hover {
+            filter: brightness(0.8);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class=" box "> </div>
+
+    <img class="logo" src="img/4.jpg" alt="">
+    <div class="text00">
+        <p>플레이브</p>
+    </div>
+
+
+
+    <div class=" box1 "> </div>
+
+    <a href="首頁.html" target="_blank" style="color: inherit; text-decoration: none;">
+        <img class="home-image" src="img/71.png" alt="">
+    </a>
+
+    <div class="video-container">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/cFm8fTRW_so" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text0">
+        <p>기다릴게 M/V wait for you </p>
+    </div>
+
+    <div class="text4">
+        <p>2023年3月12日，發行第一張單曲專輯《ASTERUM》
+            出道曲為《기다릴게 (Wait for you)》 </p>
+    </div>
+
+
+
+    <div class="video-container1">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/I2qgmAh1em0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text1">
+        <p>Pixel world Official Lyric Video </p>
+    </div>
+
+    <div class="text5">
+        <p>首專收錄曲《Pixel world》
+            官方動態歌詞 </p>
+    </div>
+
+    <div class="video-container2">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/T_gJpnjJsnk" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text2">
+        <p>Wait for you (기다릴게) Show! MusicCore </p>
+    </div>
+
+    <div class="text6">
+        <p>2023年3月18日登上MBC《Show! 音樂中心》出道舞台。 </p>
+    </div>
+
+    <div class="video-container3">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/i7ttP2_Nux4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text3">
+        <p>기다릴게 Dance Practice </p>
+    </div>
+
+    <div class="text7">
+        <p> 《기다릴게》練習室舞蹈</p>
+    </div>
+
+    <div class="video-container4">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/Q_TzqcWKz00" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text8">
+        <p>왜요 왜요 왜? Official Lyric Video </p>
+    </div>
+
+    <div class="text9">
+        <p>2023年5月25日，發行單曲《왜요 왜요 왜? (Why?)》 </p>
+    </div>
+
+    <div class="video-container5">
+        <iframe width="480" height="270" src="https://www.youtube.com/embed/7H7daeeZ_bo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="text10">
+        <p>(왜요 왜요 왜?) Show! MusicCore  </p>
+    </div>
+
+    <div class="text11">
+            <p>2023年6月3日</p>
+        <p>MBC《Show! 音樂中心》舞台。 </p>
+    </div>
+
+    <div class="text12">
+        <a href="icon.html" target="_blank" style="color: inherit; text-decoration: none;">
+        <p >音樂專輯</p>
+    </a>
+    </div>
+
+    <img class="mv-image" src="img/6.png" alt="">
+    <img class="album-image" src="img/7.png" alt="">
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
